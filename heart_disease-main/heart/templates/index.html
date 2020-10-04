@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>disease predict</title>
+
+</head>
+<body style="background-image:url('https://github.com/srhsoumya/real-estate/raw/master/heart.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;">
+
+<h4></h4>
+<form   action="{{url_for('predict')}}"method="POST" style="margin-left:35%;background-color:transparent;">
+<table  border="2px" cellspacing="4px" cellpadding="4px" width="38%" style="color:yellow;text-align:center;margin-top:10%;">
+<tr><td>age</td> <td>
+  <input type="text" name="age"/>
+</td><tr/><tr>
+<td>sex</td> <td>
+  <input type="text" placeholder="1 for men else 0"name="sex"/>
+</td><tr><td>cp</td> <td>
+  <input type="text" name="cp"/>
+</td></tr><tr><td>trestbps</td> <td>
+  <input type="text" name="trestbps"/>
+</td></tr><tr><td>col</td> <td>
+  <input type="text" name="col"/>
+</td></tr><tr><td>fbs</td> <td>
+  <input type="text" name="fbs"/>
+</td></tr><tr><td>restecg</td> <td>
+  <input type="text" name="restecg"/>
+</td></tr><tr><td>thalach</td> <td>
+  <input type="text" name="thalach"/>
+</td></tr><tr><td>exang</td> <td>
+  <input type="text" name="exang"/>
+</td></tr><tr><td>oldpeak</td> <td>
+  <input type="text" name="oldpeak"/>
+</td></tr><tr><td>slope</td> <td>
+  <input type="text" name="slope"/>
+</td></tr><tr><td>ca</td> <td>
+  <input type="text" name="ca"/>
+</td></tr>
+<tr><td>thal</td> <td>
+  <input type="text" name="thal"/>
+</td></tr>
+<tr><td colspan='2'><input type="submit" value="Predict disease"/></td></tr>
+
+</table>
+
+</form>
+
+<h4 style="text-align:center;color:yellow;background-color:black;">
+{{pre_text}}
+</h4>
+
+
+
+
+</body>
+
+
+
+
+</html>
